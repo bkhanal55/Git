@@ -25,4 +25,9 @@ public class JenkinTest {
 		assertTrue(true);
 		
 	}
+	@Test
+	public void some5Test() {
+		assertTrue(true);
+		
+	}
 }
