@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class JenkinTest {
 	@Test
 	public void someTest() {
-		System.setProperty("webdriver.gecko.driver", "C:\\Users\\bkhan\\Desktop\\Selenium\\drivers\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "drivers\\geckodriver.exe");
 		FirefoxDriver driver = new FirefoxDriver();
 
 		driver.get("http://jqueryui.com/droppable/");
