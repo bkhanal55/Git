@@ -10,7 +10,9 @@ import org.testng.annotations.Test;
 
 public class JenkinTest {
 	@Test
-	public void someTest() {
+	@Parameters("Browser")
+	public void someTest(String Browser ) {
+		if(Browser.equalsIgnoreCase("Firefox")) {
 		System.setProperty("webdriver.gecko.driver", "drivers\\geckodriver.exe");
 		FirefoxDriver driver = new FirefoxDriver();
 
@@ -28,6 +30,7 @@ public class JenkinTest {
 		act.clickAndHold(drag).moveToElement(drop).build().perform();
 		//act.dragAndDrop(drag, drop).build().perform();
 		assertTrue(true);
+		}
 		
 	}
 	@Test
