@@ -9,10 +9,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 public class JenkinTest {
-	String Browser = System.getProperty("Browser");
 	@Test
 	public void someTest() {
-		
+		String Browser = System.getProperty("Browser");
 		if(Browser.equalsIgnoreCase("Firefox")) {
 		System.setProperty("webdriver.gecko.driver", "drivers\\geckodriver.exe");
 		FirefoxDriver driver = new FirefoxDriver();
