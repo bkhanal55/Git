@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class JenkinTest {
 	@Test
 	public void someTest() {
-		String Browser = System.getProperty("Browser");
+		String Browser = System.getProperty("BrowserName");
 		if(Browser.equalsIgnoreCase("Firefox")) {
 		System.setProperty("webdriver.gecko.driver", "drivers\\geckodriver.exe");
 		FirefoxDriver driver = new FirefoxDriver();
